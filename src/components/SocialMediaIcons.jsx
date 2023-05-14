@@ -1,4 +1,3 @@
-import linkedin from '../assets/linkedin.png'
 import {FaLinkedin,FaInstagram} from 'react-icons/fa'
 
 const SocialMediaIcons = () => {
