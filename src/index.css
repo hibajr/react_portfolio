@@ -12,3 +12,8 @@ body,
   background-color: #fef9f8;
   @apply text-opaque-black;
 }
+
+link[rel="icon"] {
+  width:  100%; /* Adjust the width as needed */
+  height: 100%;
+}

@@ -45,8 +45,8 @@ const Contact= () => {
       {isAboveMediumScreens ? (
      <div className="flex bg-white justify-between w-[85%] p-5 items-center mx-auto">
       <div className="p-3">
-       <ContactC icon={<FaInstagram size={32}/>} username={'hibajr_'}/>
-       <ContactC icon={<FaLinkedin size={32}/>} username={'Abraham'}/>
+       <ContactC icon={<FaInstagram size={32}/>} username={'abrahamhiba001'}/>
+       <ContactC icon={<FaLinkedin size={32}/>} username={'Abraham Hiba'}/>
        <ContactC icon={<AiOutlineMail size={32}/>} username={'hibaabraham477@gmail.com'}/>
       </div>
       <div className="h-[600px] w-[600px]">
