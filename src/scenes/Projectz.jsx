@@ -8,23 +8,27 @@ import projects from './Projects'
 
 ///////PROJECT///////////////
 
-const Project = ({title,image,description})=>{
+const Project = ({title,image,description,siteURL})=>{
  return (
  <div className='flex items-center p-4 gap-5 bg-white w-[90%] mx-auto justify-start h-60'>
-    <div className='w-[40%] h-40%'>
+    <div className='w-[30%]'>
       <img src={image} alt="" className='w-full h-full'/>
     </div>
-    <div>
+    <div className='w-[70%]'>
       <h3 className='font-opensans underline text-lg font-semibold'>{title}</h3>
       <p className='text-base max-width-[50%]'>{description}</p>
+      <a href={siteURL} className='mt-3'>
+      <button className='p-2 bg-blue mt-3 rounded-md text-white font-semibold'>Visit Site</button>
+      </a>
     </div>
+    
  </div>
 )
 }
 
-const ProjectSm = ({title,image,description})=>{
+const ProjectSm = ({title,image,description,siteURL})=>{
   return (
-   <div className='w-90% p-1 mt-2'>
+   <div className='w-90% p-1 mt-2 mb-5'>
     <p className='text-center text-lg font-semibold'>{title}</p>
     <div>
       <img src={image} alt="" className='w-full h-full' />
@@ -32,6 +36,11 @@ const ProjectSm = ({title,image,description})=>{
     <p className='p-1 text-sm'>
       {description}
     </p>
+    <div className='flex justify-center'>
+    <a href={siteURL} className=''>
+      <button className='p-2 bg-blue font-semiboldn rounded-lg mt-3 mx-auto font-semibold text-white'>Visit Site</button>
+    </a>
+    </div>
    </div>
  )
  }
@@ -76,14 +85,10 @@ const Projectz = () => {
         <div className='mx-auto'>
             <div className='flex flex-col p-4 gap-3 w-full mx-auto '>
              <Project 
-              title={'Badili'}
-              image={badiliImage}
-              description={projects.badili.description}
-             />
-             <Project 
               title={'Megashop'}
               image={megashopImage}
               description={projects.Megashop.description}
+              siteURL={'https://marvelous-buttercream-59a51d.netlify.app'}
              />
             
             </div>
@@ -95,14 +100,10 @@ const Projectz = () => {
         : 
         (<div>
           <ProjectSm 
-          title='Badili'
-          image={badiliImage}
-          description={projects.badili.description}
-          />
-          <ProjectSm 
           title='Megashop'
           image={megashopImage}
           description={projects.Megashop.description}
+          siteURL = {'https://marvelous-buttercream-59a51d.netlify.app'}
           />
         </div>
         )

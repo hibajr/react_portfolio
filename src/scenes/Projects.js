@@ -5,7 +5,7 @@ const projects = {
     },
     Megashop:{
         title: 'Megashop',
-        description: 'Megashop is an E-commerce website where people can purchase various products sold by the admin. In this project I learned alot about user authentication and state management. Technologies used in this project were React, tailwindcss, redux-toolkit and firebase.'
+        description: 'Megashop is an E-commerce website where people can purchase various products sold by the admin.'
     }
 
 }
