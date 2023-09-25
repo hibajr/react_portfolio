@@ -12,7 +12,11 @@ const projects = {
   Netflix: {
     title: "Netflix",
     description:
-      "This is netflix clone. Users can sign up and save their favorite showa.",
+      "This is netflix clone. Users can sign up and save their favorite shows.",
+  },
+  TravelGo: {
+    title: "TravelGo",
+    description: "This is a landing page UI for a travel assistant app.",
   },
 };
 

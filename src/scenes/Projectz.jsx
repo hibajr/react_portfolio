@@ -6,6 +6,7 @@ import badiliImage from "../assets/Hero Section.png";
 import megashopImage from "../assets/megashop.png";
 import netflix from "../assets/Netflix.png";
 import projects from "./Projects";
+import travelGo from "../assets/travelgo.png";
 
 ///////PROJECT///////////////
 
@@ -100,6 +101,12 @@ const Projectz = () => {
                   "https://master--soft-croquembouche-4a308f.netlify.app/"
                 }
               />
+              <Project
+                title={"TravelGo"}
+                image={travelGo}
+                description={projects.TravelGo.description}
+                siteURL={"https://master--cerulean-nougat-46cc10.netlify.app/"}
+              />
             </div>
             <div className="mt-20">
               <LineGradient />
@@ -118,6 +125,12 @@ const Projectz = () => {
               image={netflix}
               description={projects.Megashop.description}
               siteURL={"https://master--soft-croquembouche-4a308f.netlify.app/"}
+            />
+            <ProjectSm
+              title="TravelGo"
+              image={travelGo}
+              description={projects.TravelGo.description}
+              siteURL={"https://master--cerulean-nougat-46cc10.netlify.app/"}
             />
           </div>
         )}

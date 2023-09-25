@@ -1,34 +1,27 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import tailwindcss from '../assets/skills/cdnlogo.com_tailwind-css.svg'
-import html from '../assets/skills/cdnlogo.com_html-5.svg'
-import css from '../assets/skills/cdnlogo.com_css.svg'
-import javascript from '../assets/skills/cdnlogo.com_javascript.svg'
-import reacT from '../assets/skills/cdnlogo.com_react.svg'
-import redux from '../assets/skills/cdnlogo.com_redux.svg'
-import firebase from '../assets/skills/cdnlogo.com_firebase (1).svg'
-import framerMotion from '../assets/skills/framer-motion.svg'
-
-
+import tailwindcss from "../assets/skills/cdnlogo.com_tailwind-css.svg";
+import html from "../assets/skills/cdnlogo.com_html-5.svg";
+import css from "../assets/skills/cdnlogo.com_css.svg";
+import javascript from "../assets/skills/cdnlogo.com_javascript.svg";
+import reacT from "../assets/skills/cdnlogo.com_react.svg";
+import redux from "../assets/skills/cdnlogo.com_redux.svg";
+import firebase from "../assets/skills/cdnlogo.com_firebase (1).svg";
+import framerMotion from "../assets/skills/framer-motion.svg";
+import gitHub from "../assets/skills/cdnlogo.com_github-icon.svg";
 ////////SKILL COMPONENT///////////
 
 const Skill = ({ icon, name }) => {
   return (
     <div className="px-5">
       <div className="h-16 w-16">
-        <img
-          src={icon}
-          alt=""
-          className="h-full w-full"
-        />
+        <img src={icon} alt="" className="h-full w-full" />
       </div>
-      <p className="pt-2 text-start text-baseS">
-        {name}
-      </p>
+      <p className="pt-2 text-start text-baseS">{name}</p>
     </div>
-  )
-}
+  );
+};
 
 //////////////////////////////////
 
@@ -54,8 +47,10 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7 text-base">
-            As a frontend web developer, I have expertise in various areas including HTML, CSS, JavaScript, React, and more. <br />
-            I am constantly learning and expanding my skills to stay current with the latest technologies and industry trends."
+            As a frontend web developer, I have expertise in various areas
+            including HTML, CSS, JavaScript, React, and more. <br />I am
+            constantly learning and expanding my skills to stay current with the
+            latest technologies and industry trends."
           </p>
         </motion.div>
 
@@ -66,33 +61,34 @@ const MySkills = () => {
               before:w-full before:h-full before:border-2 before:border-opaque-black before:z-[-1]"
             >
               <div className="h-full w-full p-4 grid grid-cols-4 gap-3 bg-[#f7eae8] items-center">
-                <Skill icon={html} name={'HTML5'} />
-                <Skill icon={css} name={'CSS3'} />
-                <Skill icon={javascript} name={'Javascript'} />
-                <Skill icon={reacT} name={'React'} />
-                <Skill icon={tailwindcss} name={'Tailwind CSS'} />
-                <Skill icon={redux} name={'Redux'} />
-                <Skill icon={firebase} name={'Firebase'} />
-                <Skill icon={framerMotion} name={'Framer motion'} />
-                
+                <Skill icon={html} name={"HTML5"} />
+                <Skill icon={css} name={"CSS3"} />
+                <Skill icon={javascript} name={"Javascript"} />
+                <Skill icon={reacT} name={"React"} />
+                <Skill icon={tailwindcss} name={"Tailwind CSS"} />
+                <Skill icon={redux} name={"Redux"} />
+                <Skill icon={firebase} name={"Firebase"} />
+                <Skill icon={framerMotion} name={"Framer motion"} />
+                <Skill icon={gitHub} name={"github"} />
               </div>
             </div>
           ) : (
-           <div className="grid grid-cols-3 place-items-center">
-                <Skill icon={html} name={'HTML5'} />
-                <Skill icon={css} name={'CSS3'} />
-                <Skill icon={javascript} name={'Javascript'} />
-                <Skill icon={reacT} name={'React'} />
-                <Skill icon={tailwindcss} name={'Tailwind CSS'} />
-                <Skill icon={redux} name={'Redux'} />
-                <Skill icon={firebase} name={'Firebase'} />
-                <Skill icon={framerMotion} name={'Framer motion'} />
-           </div>
+            <div className="grid grid-cols-3 place-items-center">
+              <Skill icon={html} name={"HTML5"} />
+              <Skill icon={css} name={"CSS3"} />
+              <Skill icon={javascript} name={"Javascript"} />
+              <Skill icon={reacT} name={"React"} />
+              <Skill icon={tailwindcss} name={"Tailwind CSS"} />
+              <Skill icon={redux} name={"Redux"} />
+              <Skill icon={firebase} name={"Firebase"} />
+              <Skill icon={framerMotion} name={"Framer motion"} />
+              <Skill icon={gitHub} name={"github"} />
+            </div>
           )}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default MySkills;
